@@ -7,7 +7,8 @@
     "dev": "nodemon index.js",
     "start": "node index.js",
     "cluster": "node cluster.js",
-    "test": "jest"
+    "test": "jest",
+    "testcover": "jest  --coverage"
   },
   "author": "",
   "license": "ISC",

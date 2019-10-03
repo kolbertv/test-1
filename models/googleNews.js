@@ -21,7 +21,7 @@ class GoogleNews {
                 })
                 .on("error", e => {
                     console.log(`Got error: ${e.message}`);
-                    reject(JSON.stringify({status: 200, message: 'Cannot get titles of news, please try again later'}));
+                    reject(JSON.stringify({status: 200, message: 'Cannot get titles of news, please try again later (1)'}));
                 });
         })
     }

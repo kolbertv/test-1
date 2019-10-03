@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
           res.end(
             JSON.stringify({
               status: 200,
-              message: 'Cannot get titles of news, please try again later'
+              message: 'Cannot get titles of news, please try again later (2)'
             })
           );
         }
