@@ -7,7 +7,10 @@ if (cluster.isMaster) {
     console.log(`Master started. Pid: ${process.pid}`)
 
     for (let i = 0; i< cpus; i++) {
-        cluster.fork()
+        const worker = cluster.fork();
+        worker.on('exit', ()=>{
+            cluster.fork();
+        })
 
     }
 }
